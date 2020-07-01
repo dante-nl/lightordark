@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+<style>
+   body {
+        background: white;
+        font-family: system-ui;
+        color: black
+    }
+
+    /* Light Mode */
+    @media (prefers-color-scheme: dark) {
+        body {
+            background-color: #333;
+            color: #fff
+        }
+
+        /* Dark Mode */
+    }
+  .button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 12px 24px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    background: #007bff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#007bff), to(#007bff));
+    background: -moz-linear-gradient(top, #007bff, #007bff);
+    background: linear-gradient(to bottom, #007bff, #007bff);
+    font: normal normal bold 20px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+</style>
+  
+</head>
+<body>
+  <script>
+if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    document.write("You are currently in Dark Mode");
+}
+else {
+    document.write("You are currently in Light Mode");
+ }
+</script>
+  <p></p>
+  <a class="button" href="raw">View raw</a>
+  <meta http-equiv="refresh" content="0; URL='https://lightordark.netlify.app'">
+</body>
