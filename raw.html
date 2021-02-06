@@ -3,12 +3,13 @@
     <title>Light or Dark</title>
 </head>
 <body>
+    <h1 id="result">Error</h1>
 <script>
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    document.write("Dark");
+    document.getElementById('result').innerHTML = `Dark`
 }
 else {
-    document.write("Light");
+    document.getElementById('result').innerHTML = `Light`
  }
 </script>
 </body>
